@@ -1,0 +1,91 @@
+*{
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin:0;
+    padding:20px;
+    background-color: #f1f1f1;
+}
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 8px 8px 8px 8px #aaaaaa;
+}
+header{
+    background-color: #ffffff;
+    padding:30px;
+    box-shadow: 8px 8px 8px 8px #aaaaaa;
+}
+header h1{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin: 1.5 px;
+}
+h2{
+    text-align: center;
+    margin: 1.5 px;
+}
+
+.left-column{
+    float: left;
+    width: 75%;
+}
+.right-column{
+    float: right;
+    width: 25%;
+    padding-left: 10px;
+}
+.card,.social{
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+figure{
+    padding: 0px;
+    margin: 0px;
+}
+.left-column .card img,.right-column .card figure img, .right-column .card img{
+    width: 100%;
+}
+.right-column .card{
+    margin-bottom: 10px;
+}
+.social a img{
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+}
+.right-column .card figure img:hover,.right-column .card img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.social a img:hover{
+    box-shadow: 3px 3px 3px 3px #aaaaaa;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.footer{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 8px 8px 8px 8px #aaaaaa;
+}
+footer div{
+    padding:20px;
+}
+
+@media(max-width: 800px){
+    .left-column,.right-column{
+        width: 100%;
+        padding: 0px;
+    }
+}
